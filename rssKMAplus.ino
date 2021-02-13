@@ -2,7 +2,6 @@
 #include "LiquidCrystal_I2C.h"
 #include "SoftwareSerial.h"
 #include "LiquidCrystal.h"
-#include "LowPower.h"
 
 SoftwareSerial Serial1(10, 13); // RX, TX
 
@@ -153,7 +152,7 @@ int check_Front(){ // no = 0, yes = 1, still = loop & no return
 
 void setup()
 {
-  pinMode(2, INPUT_PULLUP);
+  pinMode(2, INPUT);
   pinMode(9, OUTPUT);
   Serial.begin(9600);
 }
