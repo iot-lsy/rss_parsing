@@ -6,8 +6,8 @@
 SoftwareSerial Serial1(10, 13); // RX, TX
 
 
-char ssid[] = "U+Net1D1B";            // your network SSID (name)
-char pass[] = "0192023420";        // your network password
+char ssid[] = "*****";            // your network SSID (name)
+char pass[] = "*****";        // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
 String current_Time = "";
@@ -35,7 +35,7 @@ void connectServer(){
     
     client.println("GET "+url+" HTTP/1.1"); 
     client.print("HOST: www.kma.go.kr\n");
-    client.println("User-Agent: arduino_uno_leesoyong");
+    client.println("User-Agent: arduino_uno_***");
     client.println("Connection: close");
     client.println();
  
